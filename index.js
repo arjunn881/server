@@ -30,7 +30,7 @@ const PORT = process.env.PORT || 5000;
 
 const connect = async () => {
   await mongoose
-    .connect(process.env.MONGO)
+    .connect("mongodb+srv://arjunn881:admin@cluster0.s3boph2.mongodb.net/?retryWrites=true&w=majority")
     .then(() => {
       console.log("connected to DB");
     })
